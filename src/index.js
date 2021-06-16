@@ -9,7 +9,7 @@ import 'tachyons'
 import './index.css'
 import { searchRobots, requestRobots } from './reducers.js'
 import App from './containers/App.js'
-import LocalServiceWorkerRegister from './sw-register'
+import registerServiceWorker from './registerServiceWorker'
 
 const logger = createLogger()
 const rootReducer = combineReducers({ requestRobots, searchRobots })
@@ -25,7 +25,7 @@ ReactDOM.render(
 )
 
 // Custom Local Service Worker ( not available for dev env unless diff name )
-LocalServiceWorkerRegister()
+registerServiceWorker()
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
