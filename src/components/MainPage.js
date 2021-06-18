@@ -6,7 +6,12 @@ import Scroll from '../components/Scroll'
 import ErrorBoundry from '../components/ErrorBoundry'
 import './MainPage.css'
 
-function MainPage({ isPending, error, filteredRobots }) {
+function MainPage({ isPending, error, robots, searchField }) {
+  const filterRobots = () =>
+    robots.filter((robot) =>
+      robot.name.toLowerCase().includes(searchField.toLowerCase())
+    )
+
   return isPending ? (
     <h1 className='tc f2'>Loading...</h1>
   ) : !!error ? (
@@ -20,7 +25,7 @@ function MainPage({ isPending, error, filteredRobots }) {
       <SearchBox />
       <Scroll>
         <ErrorBoundry>
-          <CardList robots={filteredRobots} />
+          <CardList robots={filterRobots()} />
         </ErrorBoundry>
       </Scroll>
     </div>

@@ -18,17 +18,11 @@ function App() {
     ({ searchRobots }) => searchRobots.searchField
   )
 
-  const filteredRobots = robots.filter((robot) =>
-    robot.name.toLowerCase().includes(searchField.toLowerCase())
-  )
+  // const filteredRobots = robots.filter((robot) =>
+  //   robot.name.toLowerCase().includes(searchField.toLowerCase())
+  // )
 
-  return (
-    <MainPage
-      isPending={isPending}
-      error={error}
-      filteredRobots={filteredRobots}
-    />
-  )
+  return <MainPage {...{ isPending, error, robots, searchField }} />
 }
 
 export default App

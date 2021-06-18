@@ -230,6 +230,9 @@ ShallowWrapper {
         },
       },
     },
+    "snapshotSerializers": Array [
+      "enzyme-to-json/serializer",
+    ],
     Symbol(enzyme.__providerValues__): undefined,
   },
   Symbol(enzyme.__providerValues__): Map {},

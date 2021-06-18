@@ -5,7 +5,7 @@ import MainPage from './MainPage'
 let wrapper
 beforeEach(() => {
   const mockProps = {
-    onRequestRobots: jest.fn(),
+    error: '',
     robots: [],
     searchField: '',
     isPending: false
@@ -14,19 +14,18 @@ beforeEach(() => {
 })
 
 describe('Component: MainPage', () => {
-  // it('expect to render MainPage component', () => {
-  //   const mockStore = {
-  //     robots: [],
-  //     searchField: ''
-  //   }
-  //   expect(shallow(<MainPage store={mockStore} />)).toMatchSnapshot()
-  // })
-
   it('renders MainPage without crashing', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('filters robots correctly', () => {
-    // expect(wrapper)
-  })
+  // it('filters robots correctly', () => {
+  // const wrapdebug = wrapper.debug()
+  // const wrapperfind = wrapper.find('CardList')
+  // console.log('wrapdebug is [%s]: ', typeof wrapdebug, wrapdebug)
+  // console.log('wrapperfind is [%s]: ', typeof wrapperfind, wrapperfind)
+  // expect(wrapperfind.filterRobots([])).toEqual([])
+  //
+  // starting react 16+ shallow wrapper instance is null for stateless components
+  // so we cant do above kind of test
+  // })
 })
