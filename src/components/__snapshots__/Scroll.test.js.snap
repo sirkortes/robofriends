@@ -1,20 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: CardList expect to render CardList component 1`] = `
+exports[`Component: Scroll expect to render Scroll component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CardList
-    robots={
-        Array [
-            Object {
-              "email": "john@email.com",
-              "id": 1,
-              "name": "John Snow",
-              "username": "JohnJohn",
-            },
-          ]
-    }
-/>,
+  Symbol(enzyme.__unrendered__): <Scroll />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -26,30 +15,36 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": "0",
-    "nodeType": "function",
+    "key": undefined,
+    "nodeType": "host",
     "props": Object {
-      "email": "john@email.com",
-      "id": 1,
-      "name": "John Snow",
+      "children": undefined,
+      "style": Object {
+        "border": "1px solid black",
+        "height": "500px",
+        "overflowY": "scroll",
+      },
     },
     "ref": null,
     "rendered": null,
-    "type": [Function],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": "0",
-      "nodeType": "function",
+      "key": undefined,
+      "nodeType": "host",
       "props": Object {
-        "email": "john@email.com",
-        "id": 1,
-        "name": "John Snow",
+        "children": undefined,
+        "style": Object {
+          "border": "1px solid black",
+          "height": "500px",
+          "overflowY": "scroll",
+        },
       },
       "ref": null,
       "rendered": null,
-      "type": [Function],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

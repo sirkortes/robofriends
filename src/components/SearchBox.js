@@ -1,7 +1,8 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { setSearchField } from '../actions.js'
-const SearchBox = ({ searchChange }) => {
+
+const SearchBox = () => {
   const dispatch = useDispatch()
 
   return (
